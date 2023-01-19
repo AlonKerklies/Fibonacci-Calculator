@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style1.css" />
+    <!-- <style> *{border-style: solid;} </style> -->
+    <title>Fibonacci</title>
+  </head>
+  <body>
+    <img
+      class="bgimg"
+      src="./img/2560x1440-0508_fibonacci_1260.jpg"
+      alt="fibonacci_pic"
+    />
+
+
+
+
+
+
+
+
+    
+    <!-- The big container    -->
+    <div class="testcolor0 container m-5">
+      <h1 id="theheadline" class="mb-5">Fibonacci Calculator</h1>
+
+      <!-- The big flex     -->
+      <div class="d-inline-flex">
+        <!-- The left container     -->
+        <div class="d-inline p-2">
+          <!-- The left container up   -->
+          <div class="d-inline-flex col-3">
+            <!-- The Fibonacci of-->
+            <div class="col-auto me-2">The Fibonacci of</div>
+
+            <!-- the input field-->
+            <div>
+              <input
+                min="0"
+                class="form-control"
+                size="4"
+                placeholder="#"
+                type="number"
+                oninput="getTheXVal()"
+                id="theXfield"
+              />
+            </div>
+          </div>
+
+          <!-- The left container down   -->
+          <!-- checkbox -->
+          <div class="d-flex justify-content-start">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label
+                class="form-check-label align-text-top flexCheckChecked"
+                for="flexCheckChecked"
+              >
+                Save Calculation
+              </label>
+            </div>
+          </div>
+
+          <!-- error more 50  -->
+          <div class="d-flex justify-content-end">
+            <div
+              class="p-2 mt-3 border rounded col-9 text-center"
+              id="error-messege"
+            >
+              Can’t be larger than 50
+            </div>
+          </div>
+        </div>
+
+        <!-- The right container    -->
+        <div class="d-inline-flex p-2 mb-5">
+          <!-- the button  -->
+          <div class="col-auto">
+            <button class="btn btn-primary me-2" id="theMainBlueButton">
+              is
+            </button>
+          </div>
+          <!-- the spinner  -->
+          <div class="spinner-border hide-me spinnerers" role="status">
+            <span class="sr-only"></span>
+          </div>
+          <!-- the Y results  -->
+          <div
+            class="col-auto ms-2 align-text-bottom text-decoration-underline fw-bold"
+            id="id_Y_text"
+          ></div>
+          <!--  42  Messege  -->
+          <h6 id="FortyTwoMessege" class="mt-2 ms-1">server error:</h6>
+          <h6 id="cantBezeroOrLess" class="mt-2 ms-1">
+            It cant be zero or less
+          </h6>
+        </div>
+      </div>
+
+      <!-- The Results headline   -->
+      <div class="d-flex align-items-center justify-content-start mt-5 mb-5">
+        <h2 class="">Results</h2>
+        <!-- the spinner  -->
+        <div
+          id="server-spinner"
+          class="spinner-border hide-me spinnerers ms-2"
+          role="status"
+        >
+          <span class="sr-only"></span>
+        </div>
+      </div>
+      <div>
+        <!-- end The Results headline    -->
+
+        <p id="first-results" class="pb-3 mb-11 border-bottom border-dark">
+          first-results
+        </p>
+        <p id="second-results" class="pb-3 mb-11 border-bottom border-dark">
+          second-results
+        </p>
+        <p id="third-results" class="pb-3 mb-11 border-bottom border-dark">
+          third-results
+        </p>
+      </div>
+    </div>
+    <!-- enf of big container    -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
